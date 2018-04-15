@@ -22,6 +22,6 @@ public class Main {
         int num = random.nextInt(25);
         HOV hovLane = new HOV(num);
         System.out.println(hovLane);
-
+        
     }
 }
