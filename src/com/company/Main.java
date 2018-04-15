@@ -19,6 +19,8 @@ public class Main {
 
 
         Random random = new Random();
+
+        // Still only getting a single integer not 1-2-3-4-5
         int num = random.nextInt(5);
         HOV hovLane = new HOV(num);
         System.out.println(hovLane);
