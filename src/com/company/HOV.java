@@ -25,4 +25,9 @@ public class HOV {
     public void setNext(HOV next) {
         this.next = next;
     }
+
+    @Override
+    public String toString() {
+        return "HOV Lane:  " + "cars: " + cars + " next: " + next ;
+    }
 }

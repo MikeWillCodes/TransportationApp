@@ -21,7 +21,7 @@ public class Main {
         Random random = new Random();
         int num = random.nextInt(25);
         HOV hovLane = new HOV(num);
-        System.out.println("The HOV lane occupants" + hovLane);
+        System.out.println(hovLane);
 
     }
 }
