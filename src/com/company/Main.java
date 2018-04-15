@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Random;
+
 public class Main {
 
 
@@ -15,7 +17,10 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("========== Hello, User! ===========");
 
-        HOV hovLane = new HOV(10);
+
+        Random random = new Random();
+        int num = random.nextInt(25);
+        HOV hovLane = new HOV(num);
         System.out.println("The HOV lane occupants" + hovLane);
 
     }
