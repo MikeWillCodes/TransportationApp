@@ -1,17 +1,18 @@
 package com.company;
 
-public class HOV {
+public class Car {
 
     public int data;
-    public HOV next;
+    public Car next;
 
-    public HOV(int M){
+    public Car (int M){
         data = M;
         next = null;
     }
 
+
     @Override
     public String toString() {
-        return "HOV Lane:  " + "Cars: " + data + " next: " + next ;
+        return Integer.toString(data);
     }
 }

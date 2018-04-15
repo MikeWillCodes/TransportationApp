@@ -20,8 +20,8 @@ public class Main {
 
         Random random = new Random();
         int num = random.nextInt(25);
-        HOV hovLane = new HOV(num);
+        HovLane hovLane = new HovLane(num);
         System.out.println(hovLane);
-        
+
     }
 }
