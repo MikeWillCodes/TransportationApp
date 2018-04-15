@@ -19,8 +19,8 @@ public class Main {
 
 
         Random random = new Random();
-        int num = random.nextInt(25);
-        HovLane hovLane = new HovLane(num);
+        int num = random.nextInt(5);
+        HOV hovLane = new HOV(num);
         System.out.println(hovLane);
 
     }
