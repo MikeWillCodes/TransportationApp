@@ -1,6 +1,5 @@
 package com.company;
 
-import java.util.Random;
 
 public class Main {
 
@@ -18,12 +17,11 @@ public class Main {
         System.out.println("========== Hello, User! ===========");
 
 
-        Random random = new Random();
 
-        // Still only getting a single integer not 1-2-3-4-5
-        int num = random.nextInt(5);
-        HOV hovLane = new HOV(num);
-        System.out.println(hovLane);
+        HOV lane = new HOV(7);
+        System.out.println(lane.size());
+        System.out.println("hov lane: " + lane);
+
 
     }
 }

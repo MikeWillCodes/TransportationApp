@@ -1,37 +1,16 @@
 package com.company;
 
 public class Car {
-    private int data;
-    private Car head;
-    private Car next;
+    private int passengers;
+    private String color;
 
-    public Car (int data){
-        head = new Car(data);
-    }
-
-    public Car (Car node){
-        head = node;
-
-        Car temp = head;
-
-        while (temp.next != null)
-            temp = temp.next;
-
-        temp.next = new Car(data);
-    }
-
-    public Car next(){
-        if (head.next == null)
-            return null;
-
-        return new Car(head.next);
+    public Car(int passengers, String color) {
+        this.passengers = passengers;
+        this.color = color;
     }
 
     @Override
-    public String toString(){
-        if (head.next == null)
-            return Integer.toString(head.data);
-        else
-            return head.data + "-" + next().toString();
+    public String toString() {
+        return "( " + passengers +" "+ color + " )";
     }
 }
