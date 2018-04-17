@@ -13,6 +13,7 @@ public class HOV {
         this.next = null;
     }
 
+
     public int size() {
         int counter = 0;
         HOV temp = this;
@@ -36,7 +37,7 @@ public class HOV {
         colors.add("blue");
         Random random = new Random();
         for (int i = 0; i < data; i++) {
-            this.head = new Car(random.nextInt(7) +1, colors.get(random.nextInt(3)));
+            this.head = new Car(random.nextInt(7) +1, colors.get(random.nextInt(3)), random.nextInt(1000));
             this.append(head);
         }
     }
