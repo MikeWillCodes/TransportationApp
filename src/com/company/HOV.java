@@ -14,15 +14,13 @@ public class HOV {
     }
 
     public int isThereAnId() {
-        Car car = head;
         HOV temp = this;
 
+        Car car = head;
         while (temp != null) {
             temp = temp.next;
-            if (car.getPassenger() == 1)
-                return car.checkCarForPassengerThenGetId(isThereAnId());
         }
-        return 0;
+        return car.checkCarForPassengerThenGetId(car.getId());
     }
 
     public int size() {
@@ -60,6 +58,22 @@ public class HOV {
             temp = temp.next;
 
         temp.next = new HOV(car);
+    }
+
+    public Car getHead() {
+        return head;
+    }
+
+    public void setHead(Car head) {
+        this.head = head;
+    }
+
+    public HOV getNext() {
+        return next;
+    }
+
+    public void setNext(HOV next) {
+        this.next = next;
     }
 
     @Override
