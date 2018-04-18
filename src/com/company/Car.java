@@ -13,8 +13,8 @@ public class Car {
 
     public int checkCarForPassengerThenGetId(int id){
         Car car = this;
-        if (car.passenger == 1){
-            return id;
+        if (car.passenger == id){
+            return this.id;
         }
         else {
             return 0;

@@ -13,12 +13,14 @@ public class HOV {
         this.next = null;
     }
 
-    public void isThereAnId( int id) {
+    public int isThereAnId( int id) {
         HOV temp = this;
         while (temp != null) {
-            temp = temp.next;
-            temp.isThereAnId(id);
+            if (temp.head.getPassenger() == id){
+                temp = temp.next;
+            }
         }
+        return id;
     }
 
     public int size() {
