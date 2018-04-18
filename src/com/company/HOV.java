@@ -13,14 +13,19 @@ public class HOV {
         this.next = null;
     }
 
-    public int isThereAnId( int id) {
+    public ArrayList<Integer> isCarIdAvailable(int data) {
         HOV temp = this;
+        Car car = head;
+        ArrayList<Integer> IDs = new ArrayList<>();
         while (temp != null) {
-            if (temp.head.getPassenger() == id){
-                temp = temp.next;
+            temp = temp.next;
+            if (car.getPassenger() == data) {
+                IDs.add(temp.head.getId());
+            } else {
+                return null;
             }
         }
-        return id;
+        return IDs;
     }
 
     public int size() {
