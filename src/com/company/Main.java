@@ -22,7 +22,7 @@ public class Main {
         System.out.println("ID's of cars with [N] passengers" + Ids);
 
         // TODO: 4/14/18 How many [C] colored cars are in the HOV lane?
-        ArrayList<String> colors = lane.isCarColor("White");
+        ArrayList<String> colors = lane.isCarColor("white");
         System.out.println("# of cars with [C] color: " + colors.size());
     }
 }

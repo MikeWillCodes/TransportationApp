@@ -18,6 +18,7 @@ public class HOV {
         ArrayList<String> colors = new ArrayList<>();
 
         while (temp != null){
+            if (temp.head.getColor() == color)
             colors.add(temp.head.checkForCarColorThenCount(color));
             temp = temp.next;
         }
