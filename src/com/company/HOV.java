@@ -20,7 +20,7 @@ public class HOV {
         while (temp != null) {
             temp = temp.next;
             if (car.getPassenger() == 1)
-                return car.isThereAnId();
+                return car.checkCarForPassengerThenGetId(isThereAnId());
         }
         return 0;
     }

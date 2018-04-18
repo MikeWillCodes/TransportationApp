@@ -11,11 +11,14 @@ public class Car {
         this.id = id;
     }
 
-    public int isThereAnId(){
+    public int checkCarForPassengerThenGetId(int id){
         Car car = this;
-        if (car.passenger == 1)
+        if (car.passenger == 1){
             return id;
-        return 0;
+        }
+        else {
+            return 0;
+        }
     }
 
 
