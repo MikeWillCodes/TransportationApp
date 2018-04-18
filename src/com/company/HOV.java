@@ -13,6 +13,17 @@ public class HOV {
         this.next = null;
     }
 
+    public int isThereAnId() {
+        Car car = head;
+        HOV temp = this;
+
+        while (temp != null) {
+            temp = temp.next;
+            if (car.getPassenger() == 1)
+                return car.isThereAnId();
+        }
+        return 0;
+    }
 
     public int size() {
         int counter = 0;
@@ -37,7 +48,7 @@ public class HOV {
         colors.add("blue");
         Random random = new Random();
         for (int i = 0; i < data; i++) {
-            this.head = new Car(random.nextInt(7) +1, colors.get(random.nextInt(3)), random.nextInt(1000));
+            this.head = new Car(random.nextInt(7) + 1, colors.get(random.nextInt(3)), random.nextInt(1000));
             this.append(head);
         }
     }

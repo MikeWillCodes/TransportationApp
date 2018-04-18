@@ -17,8 +17,7 @@ public class Main {
         System.out.println("Number of cars in HOV lane: " + lane.size());
         System.out.println("HOV lane: " + lane);
 
-        Car car = new Car(1, "white", 3);
-        System.out.println("ID of cars with only ONE occupant: " + car.getCarId());
+        System.out.println("ID of cars with only ONE occupant: " + lane.isThereAnId());
 
     }
 }

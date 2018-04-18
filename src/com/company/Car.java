@@ -11,7 +11,7 @@ public class Car {
         this.id = id;
     }
 
-    public int getCarId(){
+    public int isThereAnId(){
         Car car = this;
         if (car.passenger == 1)
             return id;
