@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("========== Hello, User! ===========\n");
 
-        // Milestone 1
+        // Milestone 1 COMPLETE
         // 4/14/18 Create user defined LL for HOV lane
         HOV lane = new HOV(5);
 
@@ -24,5 +24,10 @@ public class Main {
         // How many [C] colored cars are in the HOV lane?
         ArrayList<String> colors = lane.isCarColor("white");
         System.out.println("# of cars with [C] color: " + colors.size());
+
+        // Milestone 2
+        // TODO: 4/18/18 if HOV lane has [N] cars open up second HOV lane
+        // TODO: 4/18/18 what was the most # of cars in lane [H] // Output total # of cars in each lane
+        // TODO: 4/18/18 was it ever true HOV lan [A] and [B] had the same number of cars? BOOLEAN // if both ever had [N] cars
     }
 }

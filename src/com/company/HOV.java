@@ -30,7 +30,9 @@ public class HOV {
         ArrayList<Integer> IDs = new ArrayList<>();
 
         while (temp != null) {
-            IDs.add(temp.head.checkCarForPassengerThenGetId(data));
+            if (temp.head.checkCarForPassengerThenGetId(data) != 0) {
+                IDs.add(temp.head.checkCarForPassengerThenGetId(data));
+            }
             temp = temp.next;
         }
         return IDs;
