@@ -13,14 +13,12 @@ public class HOV {
         this.next = null;
     }
 
-    public int isThereAnId() {
+    public void isThereAnId( int id) {
         HOV temp = this;
-
-        Car car = head;
         while (temp != null) {
             temp = temp.next;
+            temp.isThereAnId(id);
         }
-        return car.checkCarForPassengerThenGetId(car.getId());
     }
 
     public int size() {
