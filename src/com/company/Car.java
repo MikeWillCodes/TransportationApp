@@ -11,7 +11,15 @@ public class Car {
         this.id = id;
     }
 
-
+    public int checkCarForPassengerThenGetId(int data){
+        Car car = this;
+        if (car.passenger == data){
+            return this.id;
+        }
+        else {
+            return 0;
+        }
+    }
 
 
     public int getPassenger() {

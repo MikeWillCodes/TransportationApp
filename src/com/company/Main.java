@@ -1,6 +1,8 @@
 package com.company;
 
 
+import java.util.ArrayList;
+
 public class Main {
 
     // TODO: 4/14/18 What are the id(s) of cars with only ONE occupant?
@@ -17,7 +19,10 @@ public class Main {
         System.out.println("Number of cars in HOV lane: " + lane.size());
         System.out.println("HOV lane: " + lane);
 
-        System.out.println("ID of cars with only ONE occupant: " + lane.isCarIdAvailable(1));
+
+        ArrayList<Integer> Ids = lane.isCarIdAvailable(1);
+        System.out.println("ID's of cars with [N] passengers" + Ids);
+
 
     }
 }

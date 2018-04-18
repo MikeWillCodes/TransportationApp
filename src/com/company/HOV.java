@@ -15,15 +15,11 @@ public class HOV {
 
     public ArrayList<Integer> isCarIdAvailable(int data) {
         HOV temp = this;
-        Car car = head;
         ArrayList<Integer> IDs = new ArrayList<>();
+
         while (temp != null) {
+            IDs.add(temp.head.checkCarForPassengerThenGetId(data));
             temp = temp.next;
-            if (car.getPassenger() == data) {
-                IDs.add(temp.head.getId());
-            } else {
-                return null;
-            }
         }
         return IDs;
     }
