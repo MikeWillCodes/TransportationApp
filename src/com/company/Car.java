@@ -11,6 +11,16 @@ public class Car {
         this.id = id;
     }
 
+    public String checkForCarColorThenCount( String color){
+        Car car = this;
+        if (car.color == color){
+            return this.color;
+        }
+        else {
+            return "";
+        }
+    }
+
     public int checkCarForPassengerThenGetId(int data){
         Car car = this;
         if (car.passenger == data){

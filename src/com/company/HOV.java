@@ -13,7 +13,18 @@ public class HOV {
         this.next = null;
     }
 
-    public ArrayList<Integer> isCarIdAvailable(int data) {
+    public ArrayList<String> isCarColor(String color){
+        HOV temp = this;
+        ArrayList<String> colors = new ArrayList<>();
+
+        while (temp != null){
+            colors.add(temp.head.checkForCarColorThenCount(color));
+            temp = temp.next;
+        }
+        return colors;
+    }
+
+    public ArrayList<Integer>isCarId(int data) {
         HOV temp = this;
         ArrayList<Integer> IDs = new ArrayList<>();
 
@@ -27,17 +38,14 @@ public class HOV {
     public int size() {
         int counter = 0;
         HOV temp = this;
-
         if (temp == null)
             return 0;
-
         while (temp != null) {
             temp = temp.next;
             counter++;
         }
         return counter;
     }
-
 
     public HOV(int data) {
         ArrayList<String> colors = new ArrayList<>();
@@ -54,10 +62,8 @@ public class HOV {
 
     public void append(Car car) {
         HOV temp = this;
-
         while (temp.next != null)
             temp = temp.next;
-
         temp.next = new HOV(car);
     }
 
