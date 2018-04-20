@@ -43,6 +43,7 @@ public class Main {
         System.out.println("# of cars with [C] color in lane 2: " + colors2.size());
 
         // TODO: 4/18/18 was it ever true HOV lan [A] and [B] had the same number of cars? BOOLEAN // if both ever had [N] cars
-        
+
+        System.out.println("Was it ever true HOV lane [A] and [B] had the same number of cars?: " + lane.isLaneSizeSame(lane2));
     }
 }

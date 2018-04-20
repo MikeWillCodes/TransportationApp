@@ -13,9 +13,9 @@ public class HOV {
         this.next = null;
     }
 
-    public boolean isLaneSizeSame(){
+    public boolean isLaneSizeSame(HOV lane){
         HOV temp = this;
-        HOV temp2 = this;
+        HOV temp2 = lane;
         if (temp == temp2){
             return true;
         }
