@@ -7,13 +7,12 @@ public class Main {
 
 
     public static void main(String[] args) {
-        System.out.println("========== Hello, User! ===========\n");
+        System.out.println("<========== Hello User! ===========>\n");
 
         // Milestone 1 COMPLETE
         // 4/14/18 Create user defined LL for HOV lane
         HOV lane = new HOV(20);
         HOV lane2 = lane.split(12);
-
 
 
         //4/14/18 How many cars are in HOV Lane?
@@ -43,8 +42,7 @@ public class Main {
         ArrayList<String> colors2 = lane2.isCarColor("white");
         System.out.println("# of cars with [C] color in lane 2: " + colors2.size());
 
-
-
         // TODO: 4/18/18 was it ever true HOV lan [A] and [B] had the same number of cars? BOOLEAN // if both ever had [N] cars
+        
     }
 }

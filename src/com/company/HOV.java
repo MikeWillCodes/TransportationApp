@@ -13,6 +13,16 @@ public class HOV {
         this.next = null;
     }
 
+    public boolean isLaneSizeSame(){
+        HOV temp = this;
+        HOV temp2 = this;
+        if (temp == temp2){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 
     public HOV split(int moves){
         HOV temp = this;
