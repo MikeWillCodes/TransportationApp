@@ -15,6 +15,7 @@ public class Main {
         Random random = new Random();
         int num = random.nextInt(10);
         HOV lane = new HOV(num);
+        HOV lane2 = lane.split(num);
 
 
 
@@ -31,7 +32,10 @@ public class Main {
 
         // How many [C] colored cars are in the HOV lane?
         ArrayList<String> colors = lane.isCarColor("white");
-        System.out.println("# of cars with [C] color: " + colors.size());
+        System.out.println("# of cars with [C] color in lane 1: " + colors.size());
+
+        ArrayList<String> colors2 = lane2.isCarColor("white");
+        System.out.println("# of cars with [C] color in lane 2: " + colors2.size());
 
         // TODO: 4/18/18 what was the most # of cars in lane [H] // Output total # of cars in each lane
 
