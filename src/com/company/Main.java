@@ -38,7 +38,7 @@ public class Main {
         System.out.println("# of cars with [C] color in lane 2: " + colors2.size());
 
         // TODO: 4/18/18 what was the most # of cars in lane [H] // Output total # of cars in each lane
-
+        
         System.out.println("# of cars in lane 1 and lane 2: ");
 
         // Milestone 2
