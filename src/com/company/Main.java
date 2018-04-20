@@ -12,7 +12,7 @@ public class Main {
         // Milestone 1 COMPLETE
         // 4/14/18 Create user defined LL for HOV lane
         HOV lane = new HOV(5);
-        HOV2 lane2 = new HOV2(5);
+        HOV lane2 = new HOV(5);
 
         //4/14/18 How many cars are in HOV Lane?
         System.out.println("Number of [N] cars in HOV lane: " + lane.size());
