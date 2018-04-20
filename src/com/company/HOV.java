@@ -13,6 +13,17 @@ public class HOV {
         this.next = null;
     }
 
+    public HOV split(int moves){
+        HOV temp = this;
+        for (int i = 1; i < moves; i++) {
+            temp = temp.next;
+        }
+        HOV hov2 = temp.next;
+        temp.next = null;
+
+        return hov2;
+    }
+
     public ArrayList<String> isCarColor(String color){
         HOV temp = this;
         ArrayList<String> colors = new ArrayList<>();

@@ -12,14 +12,13 @@ public class Main {
         // Milestone 1 COMPLETE
         // 4/14/18 Create user defined LL for HOV lane
         HOV lane = new HOV(5);
-        HOV lane2 = new HOV(5);
 
         //4/14/18 How many cars are in HOV Lane?
         System.out.println("Number of [N] cars in HOV lane: " + lane.size());
         System.out.println("HOV lane: " + lane);
 
         System.out.println("\nNumber of [N] cars in HOV lane2: " + lane.size());
-        System.out.println("HOV lane2: " + lane2);
+        System.out.println("HOV lane2: " + lane.split(4));
 
         // 4/14/18 What are the id(s) of cars with only ONE occupant?
         ArrayList<Integer> Ids = lane.isCarId(1);
