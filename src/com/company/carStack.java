@@ -1,42 +1,38 @@
 package com.company;
 
-import java.util.ArrayList;
+import java.util.Stack;
 
 public class carStack {
-    private int arr[];
-    private int maxSize;
-    int top;
+    private Stack<Car> garage = new Stack<>();
+    // Number of cars in the garages
+    private int cars;
+    // Every cars unique ID
+    private int carID;
+    // Garage number of each of (3) garages
+    private static int garageNum = 1;
 
-    public carStack(int data){
-        maxSize = data;
-        arr = new int[maxSize];
-        top = 0;
+
+    public carStack(){
+
+    }
+
+    public int parkedCars(){
     }
 
     public boolean isEmpty(){
-        if (top == 0){
-            return true;
-        }
-        else {
-            return false;
-        }
     }
 
-    public void push(int data){
-        if (top < maxSize) {
-            arr[top] = data;
-            top++;
-        }
-        else {
-            System.out.println("Stach Overflow!");
-        }
+    public void push(){
     }
 
-    public int pop(){
-
+    public int pop() {
     }
 
     public int peek(){
+    }
 
+    @Override
+    public String toString() {
+        return "[ " + " #cars: " + cars + " carID: " + carID +" ]";
     }
 }
