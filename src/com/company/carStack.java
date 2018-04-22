@@ -20,7 +20,7 @@ public class carStack {
         garageNum++;
     }
 
-    public int parkedCars(){
+    public int parkedCars(int data){
         return cars;
     }
 
@@ -33,9 +33,9 @@ public class carStack {
         }
     }
 
-    public void push(Car car){
+    public Car push(Car car){
         cars++;
-        garage.push(car);
+        return garage.push(car);
     }
 
     public Car pop() {

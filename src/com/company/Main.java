@@ -54,5 +54,9 @@ public class Main {
 
         Valet valet = new Valet(3);
         System.out.println(valet);
+
+        Car car = new Car(1,"white", 333);
+        System.out.println(garage.push(car));
+        garage.pop();
     }
 }
