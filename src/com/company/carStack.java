@@ -21,22 +21,34 @@ public class carStack {
     }
 
     public int parkedCars(){
+        return cars;
     }
 
     public boolean isEmpty(){
+        if (cars == 0){
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
-    public void push(){
+    public void push(Car car){
+        cars++;
+        garage.push(car);
     }
 
-    public int pop() {
+    public Car pop() {
+        cars--;
+        return garage.pop();
     }
 
-    public int peek(){
+    public Car peek(){
+        return garage.lastElement();
     }
 
     @Override
     public String toString() {
-        return "[ " + " #cars: " + cars + " carID: " + carID +" ]";
+        return "[ " + " #cars: " + cars + " carID: " + id +" ]";
     }
 }
