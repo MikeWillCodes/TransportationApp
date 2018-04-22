@@ -50,5 +50,6 @@ public class Main {
 
         carStack garage = new carStack();
         System.out.println(garage);
+        System.out.println(garage.isEmpty());
     }
 }
