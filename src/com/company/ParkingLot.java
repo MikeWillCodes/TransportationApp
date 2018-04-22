@@ -7,7 +7,7 @@ public class ParkingLot {
 
     ParkingLot(int num){
         for (int i = 0; i < num; i++) {
-            risers.add(new CarRiser());
+            risers.add(new CarRiser(5));
         }
     }
 

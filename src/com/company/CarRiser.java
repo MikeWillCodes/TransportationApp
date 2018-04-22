@@ -8,10 +8,9 @@ public class CarRiser {
     private int id;
     private static int riserId = 1;
 
-    public CarRiser(Stack<Car> parking, int numOfCars, int id) {
-        this.parking = parking;
+    public CarRiser(int numOfCars) {
         this.numOfCars = numOfCars;
-        this.id = id;
+        this.id = riserId;
         riserId++;
     }
 
@@ -31,6 +30,6 @@ public class CarRiser {
 
     @Override
     public String toString() {
-        return "CarRiser{" + "parking=" + parking + ", numOfCars=" + numOfCars + ", id=" + id + '}';
+        return "numOfCars= " + numOfCars + ", id= " + id + '}';
     }
 }
