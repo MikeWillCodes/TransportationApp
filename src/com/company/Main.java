@@ -43,17 +43,18 @@ public class Main {
         ArrayList<String> colors2 = lane2.isCarColor("white");
         System.out.println("# of cars with [C] color in lane 2: " + colors2.size());
 
-        // TODO: 4/18/18 was it ever true HOV lan [A] and [B] had the same number of cars? BOOLEAN // if both ever had [N] cars
-
+        // 4/18/18 was it ever true HOV lan [A] and [B] had the same number of cars? BOOLEAN // if both ever had [N] cars
         System.out.println("Was it ever true HOV lane [A] and [B] had the same number of cars?: " + lane.isLaneSizeSame(lane2));
-
 
         carStack garage = new carStack();
         System.out.println("\n" + garage);
-        System.out.println(garage.isEmpty());
+        System.out.println("Is garage empty?: " + garage.isEmpty());
 
         Valet lots = new Valet(3);
-        System.out.println( "What's in our " + lots.size() + " lots? " + lots );
+        System.out.println( "What's in our (" + lots.size() + ") lots? " + lots );
+
+        Car car = new Car(1,"white", 333);
+        garage.push(car);
 
 
 

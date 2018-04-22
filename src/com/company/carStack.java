@@ -74,6 +74,6 @@ public class carStack {
 
     @Override
     public String toString() {
-        return "(#cars: " + cars + ", GarageId: " + id + ")";
+        return "( Cars: " + cars + ", GarageId: " + id + ")";
     }
 }

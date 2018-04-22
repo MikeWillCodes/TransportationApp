@@ -1,7 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
-import java.util.Random;
+
 
 public class Valet {
     private ArrayList<carStack> carStackArrayList = new ArrayList<>();
@@ -22,6 +22,8 @@ public class Valet {
         return "Valet: " + carStackArrayList;
     }
 
-    public void add(){
+    public void add(, Car car){
+        for (int i = 0; i < carStackArrayList.size() ; i++) {
+        }
     }
 }
