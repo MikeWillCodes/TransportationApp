@@ -2,7 +2,7 @@ package com.company;
 
 
 import java.util.ArrayList;
-import java.util.Stack;
+
 
 public class Main {
 
@@ -49,7 +49,10 @@ public class Main {
 
 
         carStack garage = new carStack();
-        System.out.println(garage);
+        System.out.println("\n" + garage);
         System.out.println(garage.isEmpty());
+
+        Valet valet = new Valet(3);
+        System.out.println(valet);
     }
 }

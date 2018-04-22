@@ -12,7 +12,7 @@ public class carStack {
     private int id;
     // Garage number of each of (3) garages, static because I can call it
     // without creating an object it belongs to
-    private static int garageNum = 1;
+    private static int garageNum = 0;
 
 
     public carStack(){
@@ -49,6 +49,6 @@ public class carStack {
 
     @Override
     public String toString() {
-        return "[ " + " #cars: " + cars + " GarageId: " + id +" ]";
+        return "(#cars: " + cars + ", GarageId: " + id + ")";
     }
 }
