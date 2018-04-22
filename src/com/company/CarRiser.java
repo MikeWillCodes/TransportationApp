@@ -17,4 +17,8 @@ public class CarRiser {
         parking.push(car);
     }
 
+    @Override
+    public String toString() {
+        return "CarRiser{" + "parking=" + parking + ", numOfCars=" + numOfCars + ", id=" + id + '}';
+    }
 }
