@@ -22,6 +22,10 @@ public class CarRiser {
         return parking.pop();
     }
 
+    private int getNumOfCars(){
+        return numOfCars;
+    }
+
     @Override
     public String toString() {
         return "CarRiser{" + "parking=" + parking + ", numOfCars=" + numOfCars + ", id=" + id + '}';
