@@ -35,6 +35,7 @@ public class carStack {
 
     public Car push(Car car){
         cars++;
+        garage.add(car);
         return garage.push(car);
     }
 
@@ -45,6 +46,30 @@ public class carStack {
 
     public Car peek(){
         return garage.lastElement();
+    }
+
+    public int getCars() {
+        return cars;
+    }
+
+    public void setCars(int cars) {
+        this.cars = cars;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public static int getGarageNum() {
+        return garageNum;
+    }
+
+    public static void setGarageNum(int garageNum) {
+        carStack.garageNum = garageNum;
     }
 
     @Override

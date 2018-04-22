@@ -52,8 +52,12 @@ public class Main {
         System.out.println("\n" + garage);
         System.out.println(garage.isEmpty());
 
-        Valet valet = new Valet(3);
-        System.out.println(valet);
+        Valet lots = new Valet(3);
+        System.out.println( "What's in our " + lots.size() + " lots? " + lots );
+        
+
+        lots.add( 0, "Toyota" ); // add a Toyota to lot 0, inside of Valet.add() you need to call carStack.push()
+        System.out.println( "What's in our " + lots.size() + " lots (toyota in lot 0)? " + lots );
 
         Car car = new Car(1,"white", 333);
         System.out.println(garage.push(car));
