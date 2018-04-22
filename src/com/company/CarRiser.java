@@ -8,10 +8,13 @@ public class CarRiser {
     private int id;
     private static int riserId = 1;
 
-    public CarRiser(){
-        this.id = riserId;
+    public CarRiser(Stack<Car> parking, int numOfCars, int id) {
+        this.parking = parking;
+        this.numOfCars = numOfCars;
+        this.id = id;
         riserId++;
     }
+
     private void push(Car car){
         numOfCars++;
         parking.push(car);
