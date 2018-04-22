@@ -8,12 +8,10 @@ public class CarRiser {
     private int id;
     private static int riserId = 1;
 
-    public CarRiser(int numOfCars) {
-        this.numOfCars = numOfCars;
+    public CarRiser(){
         this.id = riserId;
         riserId++;
     }
-
     private void push(Car car){
         numOfCars++;
         parking.push(car);
@@ -30,6 +28,6 @@ public class CarRiser {
 
     @Override
     public String toString() {
-        return "numOfCars= " + numOfCars + ", id= " + id + '}';
+        return  "Lot" + parking + " numOfCars= " + numOfCars + " id= " + id  ;
     }
 }
