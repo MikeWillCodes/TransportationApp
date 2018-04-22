@@ -17,6 +17,11 @@ public class CarRiser {
         parking.push(car);
     }
 
+    private Car pop(){
+        numOfCars--;
+        return parking.pop();
+    }
+
     @Override
     public String toString() {
         return "CarRiser{" + "parking=" + parking + ", numOfCars=" + numOfCars + ", id=" + id + '}';

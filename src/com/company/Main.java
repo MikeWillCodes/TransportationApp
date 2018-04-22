@@ -48,7 +48,7 @@ public class Main {
         System.out.println("Was it ever true HOV lane [A] and [B] had the same number of cars?: " + lane.isLaneSizeSame(lane2));
 
 
-        CarRiser lot = new CarRiser();
+        ParkingLot lot = new ParkingLot(3);
         System.out.println(lot);
     }
 }
