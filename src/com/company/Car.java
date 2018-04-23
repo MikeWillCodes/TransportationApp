@@ -31,7 +31,6 @@ public class Car {
         }
     }
 
-
     public int getPassenger() {
         return passenger;
     }

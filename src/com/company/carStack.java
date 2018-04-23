@@ -20,6 +20,14 @@ public class carStack {
         garageNum++;
     }
 
+
+
+//    public int howManyCarsMustMove(Car car){
+//        for (int i = 0; i < garage.size(); i++) {
+//
+//        }
+//    }
+
     public int count(){
         carStack temp = this;
         if (temp.cars != 0){
@@ -34,7 +42,7 @@ public class carStack {
 
             }
         }
-        return id;
+        return getId();
     }
 
 
