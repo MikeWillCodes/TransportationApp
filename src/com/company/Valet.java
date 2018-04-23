@@ -1,10 +1,14 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 
 public class Valet {
     private ArrayList<carStack> carStackArrayList = new ArrayList<>();
+
+    Random rand = new Random();
+    int num = rand.nextInt(3);
 
     public Valet(int data){
         for (int i = 0; i < data ; i++) {
@@ -17,9 +21,11 @@ public class Valet {
        return carStackArrayList.size();
     }
 
-    public void add(int i, Car car){
-        if (carStackArrayList.get(i).getId() == i){
-            carStackArrayList.get(i).push(i,car);
+    public void add(int num, Car car){
+        for (int i = 0; i < carStackArrayList.size(); i++) {
+        if (carStackArrayList.get(i).getId() == num) {
+            carStackArrayList.get(i).push(num, car);
+            }
         }
     }
     @Override
