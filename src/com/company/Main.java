@@ -55,6 +55,9 @@ public class Main {
 
         Car car = new Car(1,"white", 333);
         garage.push(car);
+        garage.add(1,car);
+
+        System.out.println(lots);
 
 
 

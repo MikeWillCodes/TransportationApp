@@ -21,9 +21,4 @@ public class Valet {
     public String toString() {
         return "Valet: " + carStackArrayList;
     }
-
-    public void add(, Car car){
-        for (int i = 0; i < carStackArrayList.size() ; i++) {
-        }
-    }
 }

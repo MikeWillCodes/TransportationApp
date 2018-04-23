@@ -76,4 +76,11 @@ public class carStack {
     public String toString() {
         return "( Cars: " + cars + ", GarageId: " + id + ")";
     }
+
+    public void add(int i, Car car) {
+        if (id == i) {
+            cars++;
+            garage.add(car);
+        }
+    }
 }
