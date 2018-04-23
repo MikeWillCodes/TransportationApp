@@ -17,6 +17,11 @@ public class Valet {
        return carStackArrayList.size();
     }
 
+    public void add(){
+
+
+
+    }
     @Override
     public String toString() {
         return "Valet: " + carStackArrayList;

@@ -20,10 +20,6 @@ public class carStack {
         garageNum++;
     }
 
-    public int parkedCars(int data){
-        return cars;
-    }
-
     public boolean isEmpty(){
         if (cars == 0){
             return true;
@@ -35,7 +31,6 @@ public class carStack {
 
     public Car push(Car car){
         cars++;
-        garage.add(car);
         return garage.push(car);
     }
 
@@ -75,12 +70,5 @@ public class carStack {
     @Override
     public String toString() {
         return "( Cars: " + cars + ", GarageId: " + id + ")";
-    }
-
-    public void add(int i, Car car) {
-        if (id == i) {
-            cars++;
-            garage.add(car);
-        }
     }
 }

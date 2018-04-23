@@ -2,6 +2,7 @@ package com.company;
 
 
 import java.util.ArrayList;
+import java.util.Stack;
 
 
 public class Main {
@@ -50,15 +51,27 @@ public class Main {
         System.out.println("\n" + garage);
         System.out.println("Is garage empty?: " + garage.isEmpty());
 
+        Car car = new Car(1,"White",33);
+        Car car1 = new Car(2,"Black",23);
+        Car car2 = new Car(3,"Red",43);
+        Car car3 = new Car(4,"White",53);
+        Car car4 = new Car(5,"Red",6);
+        Car car5 = new Car(6,"Black",3);
+        Car car6= new Car(7,"White",7);
+
+
+        Stack<Car> riser = new Stack<>();
+        riser.push(car);
+        riser.push(car1);
+        riser.push(car2);
+        riser.push(car3);
+        riser.push(car4);
+        riser.push(car5);
+        riser.push(car6);
+        System.out.println(riser);
+
         Valet lots = new Valet(3);
         System.out.println( "What's in our (" + lots.size() + ") lots? " + lots );
-
-        Car car = new Car(1,"white", 333);
-        garage.push(car);
-        garage.add(1,car);
-
-        System.out.println(lots);
-
 
 
     }
