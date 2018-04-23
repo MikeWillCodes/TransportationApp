@@ -28,6 +28,7 @@ public class Valet {
             }
         }
     }
+
     @Override
     public String toString() {
         return "Valet: " + carStackArrayList;

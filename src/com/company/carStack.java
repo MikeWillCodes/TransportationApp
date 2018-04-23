@@ -20,6 +20,22 @@ public class carStack {
         garageNum++;
     }
 
+    public int count(){
+        carStack temp = this;
+        if (temp.cars != 0){
+            return cars;
+        }
+        return cars;
+    }
+
+    public void findCar(Car car){
+        for (int i = 0; i < garage.size() ; i++) {
+            if (car == garage.get(i)){
+
+            }
+        }
+    }
+
     public boolean isEmpty(){
         if (cars == 0){
             return true;

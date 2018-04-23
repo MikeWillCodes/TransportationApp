@@ -74,7 +74,6 @@ public class Main {
         riser.push(car5);
         riser.push(car6);
 
-        System.out.println("\n Riser: " + riser + "\n");
 
         Random random = new Random();
         Valet lots = new Valet(3);
@@ -92,7 +91,7 @@ public class Main {
         System.out.println( "What's in our (" + lots.size() + ") lots? " + lots );
 
 
-        garage.push(1,car1);
+
 
 
 
