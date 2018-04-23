@@ -19,7 +19,7 @@ public class Valet {
 
     public void add(int i, Car car){
         if (carStackArrayList.get(i).getId() == i){
-            carStackArrayList.get(i).push(car);
+            carStackArrayList.get(i).push(i,car);
         }
     }
     @Override

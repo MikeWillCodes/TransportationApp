@@ -29,8 +29,9 @@ public class carStack {
         }
     }
 
-    public Car push(Car car){
-        cars++;
+    public Car push(int i,Car car){
+        if (i == this.id)
+        cars = cars + 1;
         return garage.push(car);
     }
 

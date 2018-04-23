@@ -68,12 +68,16 @@ public class Main {
         riser.push(car4);
         riser.push(car5);
         riser.push(car6);
-        System.out.println(riser);
+        System.out.println("\n Riser: " + riser + "\n");
 
         Valet lots = new Valet(3);
         lots.add(1,car);
         lots.add(2,car1);
         System.out.println( "What's in our (" + lots.size() + ") lots? " + lots );
+
+
+        garage.push(1,car1);
+
 
 
     }
