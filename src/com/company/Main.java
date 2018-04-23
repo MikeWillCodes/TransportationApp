@@ -2,6 +2,7 @@ package com.company;
 
 
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.Stack;
 
 
@@ -52,12 +53,16 @@ public class Main {
         System.out.println("Is garage empty?: " + garage.isEmpty());
 
         Car car = new Car(1,"White",33);
-        Car car1 = new Car(2,"Black",23);
-        Car car2 = new Car(3,"Red",43);
-        Car car3 = new Car(4,"White",53);
+        Car car1 = new Car(2,"Black",11);
+        Car car2 = new Car(3,"Red",12);
+        Car car3 = new Car(4,"White",5);
         Car car4 = new Car(5,"Red",6);
         Car car5 = new Car(6,"Black",3);
-        Car car6= new Car(7,"White",7);
+        Car car6= new Car(7,"Black",7);
+        Car car7= new Car(1,"Red",4);
+        Car car8= new Car(3,"Blue",3);
+        Car car9= new Car(5,"Blue",9);
+        Car car10= new Car(2,"Blue",8);
 
 
         Stack<Car> riser = new Stack<>();
@@ -68,11 +73,22 @@ public class Main {
         riser.push(car4);
         riser.push(car5);
         riser.push(car6);
+
         System.out.println("\n Riser: " + riser + "\n");
 
+        Random random = new Random();
         Valet lots = new Valet(3);
-        lots.add(1,car);
-        lots.add(2,car1);
+        lots.add(random.nextInt(3) +1,car);
+        lots.add(random.nextInt(3) +1,car1);
+        lots.add(random.nextInt(3) +1,car2);
+        lots.add(random.nextInt(3) +1,car3);
+        lots.add(random.nextInt(3) +1,car4);
+        lots.add(random.nextInt(3) +1,car5);
+        lots.add(random.nextInt(3) +1,car6);
+        lots.add(random.nextInt(3) +1,car7);
+        lots.add(random.nextInt(3) +1,car8);
+        lots.add(random.nextInt(3) +1,car9);
+        lots.add(random.nextInt(3) +1,car10);
         System.out.println( "What's in our (" + lots.size() + ") lots? " + lots );
 
 
