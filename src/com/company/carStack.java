@@ -31,7 +31,7 @@ public class carStack {
     public int findCar(Car car){
         for (int i = 0; i < garage.size() ; i++) {
             if (garage.contains(car)){
-                
+
             }
         }
         return id;

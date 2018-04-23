@@ -91,6 +91,7 @@ public class Main {
         System.out.println( "What's in our (" + lots.size() + ") lots? " + lots );
 
         System.out.println("Your car is in garage: " + garage.findCar(car4));
+        System.out.println("How many cars in garage: " + garage.count());
 
 
 
