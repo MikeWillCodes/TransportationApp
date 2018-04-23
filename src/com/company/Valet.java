@@ -17,10 +17,10 @@ public class Valet {
        return carStackArrayList.size();
     }
 
-    public void add(){
-
-
-
+    public void add(int i, Car car){
+        if (carStackArrayList.get(i).getId() == i){
+            carStackArrayList.get(i).push(car);
+        }
     }
     @Override
     public String toString() {

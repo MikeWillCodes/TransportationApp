@@ -71,6 +71,8 @@ public class Main {
         System.out.println(riser);
 
         Valet lots = new Valet(3);
+        lots.add(1,car);
+        lots.add(2,car1);
         System.out.println( "What's in our (" + lots.size() + ") lots? " + lots );
 
 
