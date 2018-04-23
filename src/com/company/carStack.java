@@ -30,12 +30,13 @@ public class carStack {
 
     public int findCar(Car car){
         for (int i = 0; i < garage.size() ; i++) {
-            if (car == garage.get(i)){
-                return id ;
-            }
+           if (garage.contains(car)){
+
+           }
         }
-        return 0;
+        return id;
     }
+
 
     public boolean isEmpty(){
         if (cars == 0){
