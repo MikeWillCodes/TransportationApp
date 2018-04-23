@@ -93,6 +93,8 @@ public class Main {
         System.out.println("Your car is in garage: " + garage.findCar(car4));
         System.out.println("How many cars in garage: " + garage.count());
 
+        System.out.println("Is car in special parking: " + garage.isSpecial());
+
 
 
 

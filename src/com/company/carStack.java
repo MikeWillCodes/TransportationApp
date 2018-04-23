@@ -21,6 +21,14 @@ public class carStack {
     }
 
 
+    public boolean isSpecial(){
+        if (carStack.getGarageNum() == 2){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 
 //    public int howManyCarsMustMove(Car car){
 //        for (int i = 0; i < garage.size(); i++) {
