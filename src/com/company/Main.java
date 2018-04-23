@@ -90,7 +90,7 @@ public class Main {
         lots.add(random.nextInt(3) +1,car10);
         System.out.println( "What's in our (" + lots.size() + ") lots? " + lots );
 
-        System.out.println(garage.findCar(car));
+        System.out.println("Your car is in garage: " + garage.findCar(car4));
 
 
 

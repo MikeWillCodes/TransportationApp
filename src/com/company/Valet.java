@@ -16,14 +16,15 @@ public class Valet {
         }
     }
 
-    public int findCar(Car car){
-        for (int i = 0; i < carStackArrayList.size() ; i++) {
-         if (carStackArrayList.contains(car)){
-             return carStackArrayList.get(i).getId();
-            }
-        }
-        return findCar(car);
-    }
+//    public int findCar(Car car){
+//        int id = 0;
+//        for (int i = 0; i < carStackArrayList.size() ; i++) {
+//         if (carStackArrayList.contains(car)) {
+//             id = carStackArrayList.get(i).getId();
+//            }
+//        }
+//        return id;
+//    }
 
     public int size(){
        return carStackArrayList.size();
